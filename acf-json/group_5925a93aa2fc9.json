@@ -23,6 +23,22 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5964b5ad64136",
+                            "label": "Image",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_5963afa0986a3",
                             "label": "Image Position",
                             "name": "image_position",
@@ -116,6 +132,22 @@
                             "placeholder": ""
                         },
                         {
+                            "key": "field_5964b5cc64137",
+                            "label": "Text",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
                             "key": "field_5925a9c3b8fb1",
                             "label": "Title",
                             "name": "title",
@@ -138,7 +170,7 @@
                             "key": "field_5925a9d5b8fb2",
                             "label": "Text",
                             "name": "text",
-                            "type": "textarea",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -148,10 +180,26 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5964b5e164138",
+                            "label": "Button Link",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
                         },
                         {
                             "key": "field_5925a9edb8fb3",
@@ -425,5 +473,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499768272
+    "modified": 1499772809
 }
