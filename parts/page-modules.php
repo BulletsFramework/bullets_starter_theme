@@ -18,6 +18,12 @@
 	        } elseif( get_row_layout() == 'page_menu'  ) {
 	        	include(locate_template('parts/modules/module-page-menu.php'));
 
+	        } elseif( get_row_layout() == 'blockquote'  ) {
+	        	include(locate_template('parts/modules/module-blockquote.php'));
+
+	        } elseif( get_row_layout() == 'embedded_video'  ) {
+	        	include(locate_template('parts/modules/module-embedded-video.php'));
+
 	        } 
 
 	    endwhile;
