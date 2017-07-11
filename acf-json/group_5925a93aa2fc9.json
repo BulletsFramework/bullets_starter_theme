@@ -312,7 +312,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": [],
+                            "post_type": [
+                                "post",
+                                "page",
+                                "custom_type"
+                            ],
                             "taxonomy": [],
                             "allow_null": 0,
                             "allow_archives": 1,
@@ -515,7 +519,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": [],
+                            "post_type": [
+                                "post",
+                                "page",
+                                "custom_type"
+                            ],
                             "taxonomy": [],
                             "allow_null": 0,
                             "allow_archives": 1,
@@ -712,7 +720,11 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "post_type": [],
+                            "post_type": [
+                                "post",
+                                "page",
+                                "custom_type"
+                            ],
                             "taxonomy": [],
                             "allow_null": 0,
                             "allow_archives": 1,
@@ -799,6 +811,61 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "5964e8069a3c0": {
+                    "key": "5964e8069a3c0",
+                    "name": "blockquote",
+                    "label": "Blockquote",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5964e8949a3c2",
+                            "label": "Quote Text",
+                            "name": "quote_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5964e80d9a3c1": {
+                    "key": "5964e80d9a3c1",
+                    "name": "embedded_video",
+                    "label": "Embedded Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5964e992c22b6",
+                            "label": "Video",
+                            "name": "video",
+                            "type": "oembed",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "width": "",
+                            "height": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Page Module",
@@ -830,5 +897,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499784528
+    "modified": 1499785637
 }
