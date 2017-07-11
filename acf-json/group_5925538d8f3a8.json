@@ -175,11 +175,11 @@
             "endpoint": 0
         },
         {
-            "key": "field_5942b36b7c593",
+            "key": "field_5964a6cc34aec",
             "label": "Address",
             "name": "address",
-            "type": "repeater",
-            "instructions": "Add each line of the address as a separate row.",
+            "type": "textarea",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -187,32 +187,11 @@
                 "class": "",
                 "id": ""
             },
-            "collapsed": "",
-            "min": 1,
-            "max": 0,
-            "layout": "table",
-            "button_label": "Add Line",
-            "sub_fields": [
-                {
-                    "key": "field_5942b38c7c594",
-                    "label": "Address Line",
-                    "name": "address_line",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                }
-            ]
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
         }
     ],
     "location": [
@@ -232,5 +211,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499768298
+    "modified": 1499768279
 }
