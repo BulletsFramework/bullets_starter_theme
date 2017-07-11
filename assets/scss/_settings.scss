@@ -1,0 +1,152 @@
+@import "../../node_modules/bullets-sass/scss/mixins";
+// Global
+$global-font-family:'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$global-font-size:16px;
+$global-line-height:1.2;
+$global-font-weight:300;
+$text-color:#222222;
+$global-width:1200px;
+
+$global-margin: 2rem;
+$global-padding: 2rem;
+$global-left: 1rem;
+
+$global-weight-normal: 300;
+$global-weight-bold: 700;
+
+
+// Colour Scheme
+$primary: #1779ba;
+$secondary: #767676;
+$success: #3adb76;
+$warning: #ffae00;
+$alert: #cc4b37;
+
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+
+// Typography - null is effectively mobile
+
+$h1-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h2-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h3-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h4-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h5-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h6-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+
+$header-font-family:'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$header-line-height:1.2;
+$header-bottom-margin:rem-calc(30);
+
+$paragraph-line-height:1.6;
+$paragraph-margin-bottom:1.2rem;
+
+$list-lineheight: $paragraph-line-height;
+$list-margin-bottom: $paragraph-margin-bottom;
+$list-style-type: disc;
+$list-style-position: outside;
+$list-side-margin: 1.25rem;
+$list-nested-side-margin: 1.25rem;
+$defnlist-margin-bottom: 1rem;
+$defnlist-term-weight: $global-weight-bold;
+$defnlist-term-margin-bottom: 0.3rem;
+$blockquote-color: $dark-gray;
+$blockquote-padding: rem-calc(9 20 0 19);
+$blockquote-border: 1px solid $medium-gray;
+$cite-font-size: rem-calc(13);
+$cite-color: $dark-gray;
+$cite-pseudo-content: '\2014 \0020';
+$abbr-underline: 1px dotted $black;
+
+// inputs
+$input-height:60px;
+$input-border-color:$light-gray;
+$input-focus-color:$primary;
+$input-focus-border-color:$primary;
+
+// buttons
+$button-padding-topbottom: 14px;
+$button-padding-leftright: 40px;
+$button-background: $primary;
+$button-text-color: $white;
+$button-text-transform: uppercase;
+$button-letter-spacing: 3px;
+$button-font-size:rem-calc(14);
+$button-rounded:true;
+$button-border-radius:40px;
+
+// tables
+$table-striped: even;
+$table-striped-background: $light-gray;
+$table-header-background: #eeeeee;
+$table-header-padding: rem-calc(10 12 10 12);
+$table-header-weight: $global-weight-bold;
+$table-body-background: #ffffff;
+$table-body-padding: rem-calc(10 12 10 12);
+$table-body-weight: $global-weight-normal;
+$table-footer-background: #eeeeee;
+$table-footer-padding: rem-calc(10 12 10 12);
+$table-footer-weight: $global-weight-normal;
+
+// Grid
+$desktopbreak:rem-calc(1280);
+$laptopbreak:rem-calc(1024);
+$tabletbreak:rem-calc(768);
+$phabletbreak:rem-calc(460);
+$mobilebreak:rem-calc(320);
+
+// map the breakpoints
+$breakpoints: (
+	mobile-min: $mobilebreak,
+	phablet-min: $phabletbreak,
+	tablet-min: $tabletbreak,
+	laptop-min: $laptopbreak,
+	desktop-min: $desktopbreak,
+	mobile-max: $phabletbreak - 1,
+	phablet-max: $tabletbreak - 1,
+	tablet-max: $laptopbreak - 1,
+	laptop-max: $desktopbreak - 1,
+);
+
+$grid-break-point-tablet:$tabletbreak;
+$grid-break-point-desktop:$laptopbreak;
+// this is the width at which you want the fexbox grid to kick in - below this width will be single column
