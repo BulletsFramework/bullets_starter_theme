@@ -7,6 +7,8 @@
 
 	$footer_heading = get_field('footer_heading', 'options');
 	$footer_intro = get_field('footer_intro', 'options');
+
+	$address = get_field('address', 'options');
 ?>
 		<footer class="footer" role="contentinfo">
 
@@ -35,6 +37,12 @@
 						<?php endif; ?>
 						<?php if ( $email_address ) : ?>
 							<a href="mailto:<?php echo $email_address; ?>">E: <?php echo $email_address; ?></a>
+						<?php endif; ?>
+
+						<?php if ( $address ) : ?>
+							<address>
+								<?php echo $address; ?>
+							</address>
 						<?php endif; ?>
 
 						<ul class="social">
