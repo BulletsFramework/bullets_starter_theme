@@ -18,8 +18,8 @@
             "layouts": {
                 "5925a950236fc": {
                     "key": "5925a950236fc",
-                    "name": "content_with_image",
-                    "label": "Content with image",
+                    "name": "image_with_text",
+                    "label": "Image with text",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -322,19 +322,10 @@
                     "min": "",
                     "max": ""
                 },
-                "5963b0a9986a4": {
-                    "key": "5963b0a9986a4",
-                    "name": "multiple_box_content_area",
-                    "label": "Multiple Box Content Area",
-                    "display": "block",
-                    "sub_fields": [],
-                    "min": "",
-                    "max": ""
-                },
                 "5937c9691d21e": {
                     "key": "5937c9691d21e",
-                    "name": "double_image_content_area",
-                    "label": "Double Image Content Area",
+                    "name": "images",
+                    "label": "Images",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -361,31 +352,22 @@
                             "max_height": "",
                             "max_size": "",
                             "mime_types": ""
-                        },
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5964c6cf87055": {
+                    "key": "5964c6cf87055",
+                    "name": "text",
+                    "label": "Text",
+                    "display": "block",
+                    "sub_fields": [
                         {
-                            "key": "field_5937c9ab1d21f",
-                            "label": "Title",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5937c9d11d220",
+                            "key": "field_5964c6db87056",
                             "label": "Text",
                             "name": "text",
-                            "type": "textarea",
+                            "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -395,10 +377,10 @@
                                 "id": ""
                             },
                             "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
                         }
                     ],
                     "min": "",
@@ -434,5 +416,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499776187
+    "modified": 1499776858
 }

@@ -6,10 +6,16 @@
 	    // loop through the rows of data
 	    while ( have_rows('page_modules') ) : the_row();
 
-	        if( get_row_layout() == 'content_with_image'  ) {
-	        	include(locate_template('parts/modules/module-content-with-image.php'));
+	        if( get_row_layout() == 'image_with_text'  ) {
+	        	include(locate_template('parts/modules/module-image-with-text.php'));
 
-	        }   
+	        } elseif( get_row_layout() == 'images'  ) {
+	        	include(locate_template('parts/modules/module-images.php'));
+
+	        } elseif( get_row_layout() == 'text'  ) {
+	        	include(locate_template('parts/modules/module-text.php'));
+
+	        }  
 
 	    endwhile;
 
