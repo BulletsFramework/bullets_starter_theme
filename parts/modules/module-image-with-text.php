@@ -33,20 +33,13 @@
 			</div>
 		<?php endif; ?>
 		<div class="column column-m-12 <?php echo $column_class; ?>">
-			<?php
-				if ($title) {
-					echo "<h3>{$title}</h3>";
-				}
-
-				if ($text) {
-					echo $text;
-				}
-
-				if( $button_link && $button_text && $button_url ) {
-					$button_attr = $button_link == "External" ? " target='_blank' rel='noopener noreferrer'" : "";
-					echo "<a class='cta' href='{$button_url}'{$button_attr}>{$button_text}</a>";
-				}
-			?>
+			<?php if($title) : ?>
+				<h3><?php echo $title; ?></h3>
+			<?php endif; ?>
+			<?php if ($text) { echo $text; } ?>
+			<?php if($button_link && $button_text && $button_url) : ?>
+				<a href="<?php echo $button_url; ?>" <?php if($button_link == "External") : ?>target="_blank" rel="noopener noreferrer"<?php endif; ?>><?php echo $button_text; ?></a>
+			<?php endif; ?>
 		</div>
 	</div>
 </div>
