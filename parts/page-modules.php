@@ -7,7 +7,7 @@
 	    while ( have_rows('page_modules') ) : the_row();
 
 	        if( get_row_layout() == 'content_with_image'  ) {
-	        	include(locate_template('parts/modules/single-box-content-area.php'));
+	        	include(locate_template('parts/modules/module-content-with-image.php'));
 
 	        }   
 

@@ -7,7 +7,7 @@
             "label": "Page Modules",
             "name": "page_modules",
             "type": "flexible_content",
-            "instructions": "'Content with image:\r\nThis module allows you to add an image, some text and a button. You can specify whether the image displays above, to the left or to the right of text. All fields are optional.<br><br>\r\n\r\nNOTE ON RESPONSIVE LAYOUTS:\r\nPage modules will generally stack vertically on mobiles. More abstract layouts will come into effect on tablet or sometimes laptop devices, depending on suitability to screen widths.",
+            "instructions": "'Content with image':\r\nThis module allows you to add an image, some text and a button. You can specify whether the image displays above, to the left or to the right of text. All fields are optional.<br><br>\r\n\r\nNOTE ON RESPONSIVE LAYOUTS:\r\nPage modules will generally stack vertically on mobiles. More abstract layouts will come into effect on tablet or sometimes laptop devices, depending on suitability to screen widths.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -434,5 +434,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499775252
+    "modified": 1499776187
 }
