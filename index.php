@@ -3,9 +3,11 @@
     
 	    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	    	<div class="row">
-	    		<div class="column column-m-12 column-t-7 column-d-8">
-					<?php get_template_part( 'parts/loop', 'archive' ); ?>
+	    	<div class="container">
+		    	<div class="row">
+		    		<div class="column column-m-12 column-t-7 column-d-8">
+						<?php get_template_part( 'parts/loop', 'archive' ); ?>
+					</div>
 				</div>
 			</div>
 		    
@@ -15,11 +17,13 @@
 			
 		<?php else : ?>
 
-	    	<div class="row">
-	    		<div class="column column-m-12">
-					<?php get_template_part( 'parts/content', 'missing' ); ?>
-				</div>
-			</div>			
+			<div class="container">
+		    	<div class="row">
+		    		<div class="column column-m-12">
+						<?php get_template_part( 'parts/content', 'missing' ); ?>
+					</div>
+				</div>			
+			</div>
 				
 		<?php endif; ?>
 																						
