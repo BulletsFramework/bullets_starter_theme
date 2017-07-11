@@ -7,7 +7,7 @@
             "label": "Page Modules",
             "name": "page_modules",
             "type": "flexible_content",
-            "instructions": "'Single Box Content Area':\r\nThis module allows you to add two side-by-side images, a title and some text. This module is useful for showing 'before and after' shots in a case study for example. None of the fields are compulsory so you could simply use the module to show some text.<br><br>\r\n\r\nNOTE ON RESPONSIVE LAYOUTS:\r\nPage modules will generally stack vertically on mobiles. More abstract layouts will come into effect on tablet or sometimes laptop devices, depending on suitability to screen widths.",
+            "instructions": "'Content with image:\r\nThis module allows you to add an image, some text and a button. You can specify whether the image displays above, to the left or to the right of text. All fields are optional.<br><br>\r\n\r\nNOTE ON RESPONSIVE LAYOUTS:\r\nPage modules will generally stack vertically on mobiles. More abstract layouts will come into effect on tablet or sometimes laptop devices, depending on suitability to screen widths.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -18,8 +18,8 @@
             "layouts": {
                 "5925a950236fc": {
                     "key": "5925a950236fc",
-                    "name": "single_box_content_area",
-                    "label": "Single Box Content Area",
+                    "name": "content_with_image",
+                    "label": "Content with image",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -146,25 +146,6 @@
                             },
                             "placement": "top",
                             "endpoint": 0
-                        },
-                        {
-                            "key": "field_5925a9c3b8fb1",
-                            "label": "Title",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
                         },
                         {
                             "key": "field_5925a9d5b8fb2",
@@ -360,7 +341,7 @@
                             "key": "field_5937c9e21d221",
                             "label": "Images",
                             "name": "images",
-                            "type": "repeater",
+                            "type": "gallery",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -369,37 +350,17 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "collapsed": "",
-                            "min": 0,
-                            "max": 2,
-                            "layout": "table",
-                            "button_label": "Add Image",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5937c9f41d222",
-                                    "label": "Image",
-                                    "name": "image",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
-                                }
-                            ]
+                            "min": "",
+                            "max": "",
+                            "insert": "append",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         },
                         {
                             "key": "field_5937c9ab1d21f",
@@ -473,5 +434,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499774061
+    "modified": 1499775252
 }
