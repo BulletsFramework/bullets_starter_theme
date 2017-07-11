@@ -23,6 +23,30 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5937c9f41d222",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
                             "key": "field_5964b5ad64136",
                             "label": "Image",
                             "name": "",
@@ -291,7 +315,7 @@
                             "post_type": [],
                             "taxonomy": [],
                             "allow_null": 0,
-                            "allow_archives": 0,
+                            "allow_archives": 1,
                             "multiple": 0
                         },
                         {
@@ -322,16 +346,32 @@
                     "min": "",
                     "max": ""
                 },
-                "5937c9691d21e": {
-                    "key": "5937c9691d21e",
+                "5964df5d7ed51": {
+                    "key": "5964df5d7ed51",
                     "name": "images",
                     "label": "Images",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5937c9e21d221",
+                            "key": "field_5964e221a8498",
                             "label": "Images",
-                            "name": "images",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5964df5d7ed54",
+                            "label": "Image Content",
+                            "name": "image_content",
                             "type": "gallery",
                             "instructions": "",
                             "required": 0,
@@ -352,19 +392,187 @@
                             "max_height": "",
                             "max_size": "",
                             "mime_types": ""
+                        },
+                        {
+                            "key": "field_5964df5d7ed58",
+                            "label": "Button Link",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5964df5d7ed59",
+                            "label": "Button Link",
+                            "name": "button_link",
+                            "type": "select",
+                            "instructions": "You can add a button link by specifying the type of link. The button link will show below text content.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Internal": "Internal",
+                                "External": "External"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5964df5d7ed5a",
+                            "label": "Button Text",
+                            "name": "button_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5964df5d7ed59",
+                                        "operator": "!=",
+                                        "value": ""
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5964df5d7ed5b",
+                            "label": "Button Link",
+                            "name": "button_link",
+                            "type": "select",
+                            "instructions": "Please state whether the button will link to a page within Formation Interiors or if the button will link to an external web page.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5964df5d7ed59",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Formation Interiors page": "Formation Interiors page",
+                                "External web page": "External web page"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5964df5d7ed5c",
+                            "label": "Page Link",
+                            "name": "page_link",
+                            "type": "page_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5964df5d7ed59",
+                                        "operator": "==",
+                                        "value": "Internal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "allow_archives": 1,
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5964df5d7ed5d",
+                            "label": "External Link",
+                            "name": "external_link",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5964df5d7ed59",
+                                        "operator": "==",
+                                        "value": "External"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
                         }
                     ],
                     "min": "",
                     "max": ""
                 },
-                "5964c6cf87055": {
-                    "key": "5964c6cf87055",
+                "5964dfc07ed5e": {
+                    "key": "5964dfc07ed5e",
                     "name": "text",
                     "label": "Text",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5964c6db87056",
+                            "key": "field_5964dfc07ed5f",
+                            "label": "Text",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5964dfc07ed60",
                             "label": "Text",
                             "name": "text",
                             "type": "wysiwyg",
@@ -381,6 +589,212 @@
                             "toolbar": "full",
                             "media_upload": 1,
                             "delay": 0
+                        },
+                        {
+                            "key": "field_5964dfc07ed61",
+                            "label": "Button Link",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5964dfc07ed62",
+                            "label": "Button Link",
+                            "name": "button_link",
+                            "type": "select",
+                            "instructions": "You can add a button link by specifying the type of link. The button link will show below text content.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Internal": "Internal",
+                                "External": "External"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5964dfc07ed63",
+                            "label": "Button Text",
+                            "name": "button_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5964dfc07ed62",
+                                        "operator": "!=",
+                                        "value": ""
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5964dfc07ed64",
+                            "label": "Button Link",
+                            "name": "button_link",
+                            "type": "select",
+                            "instructions": "Please state whether the button will link to a page within Formation Interiors or if the button will link to an external web page.",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5964dfc07ed62",
+                                        "operator": "==",
+                                        "value": "1"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "Formation Interiors page": "Formation Interiors page",
+                                "External web page": "External web page"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5964dfc07ed65",
+                            "label": "Page Link",
+                            "name": "page_link",
+                            "type": "page_link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5964dfc07ed62",
+                                        "operator": "==",
+                                        "value": "Internal"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [],
+                            "taxonomy": [],
+                            "allow_null": 0,
+                            "allow_archives": 1,
+                            "multiple": 0
+                        },
+                        {
+                            "key": "field_5964dfc07ed66",
+                            "label": "External Link",
+                            "name": "external_link",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5964dfc07ed62",
+                                        "operator": "==",
+                                        "value": "External"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "5964e4c3a8ebf": {
+                    "key": "5964e4c3a8ebf",
+                    "name": "page_menu",
+                    "label": "Page Menu",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5964e5311efff",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5964e4d0a8ec0",
+                            "label": "Module Menu",
+                            "name": "module_menu",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [],
+                            "taxonomy": [],
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "elements": "",
+                            "min": "",
+                            "max": "",
+                            "return_format": "object"
                         }
                     ],
                     "min": "",
@@ -416,5 +830,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499776858
+    "modified": 1499784528
 }

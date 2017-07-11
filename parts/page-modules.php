@@ -15,7 +15,10 @@
 	        } elseif( get_row_layout() == 'text'  ) {
 	        	include(locate_template('parts/modules/module-text.php'));
 
-	        }  
+	        } elseif( get_row_layout() == 'page_menu'  ) {
+	        	include(locate_template('parts/modules/module-page-menu.php'));
+
+	        } 
 
 	    endwhile;
 
