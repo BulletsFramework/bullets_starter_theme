@@ -1,0 +1,11 @@
+.menu {
+    display: none;
+
+    @include breakpoint(desktop){
+        display: block!important;
+    }
+}
+
+.menu-is-open .menu {
+    display: block;
+}
