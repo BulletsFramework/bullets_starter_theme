@@ -1,8 +1,8 @@
 <?php
 	// image fields
 	$image_position = get_sub_field('image_position');
-	$image = $image_position ? get_sub_field('image') : false;
-	$image_orientation = $image_position ? get_sub_field('image_orientation') : false;
+	$image = get_sub_field('image');
+	$image_orientation = get_sub_field('image_orientation');
 
 	// text fields
 	$title = get_sub_field('title');
@@ -10,15 +10,15 @@
 
 	// button fields
 	$button_link = get_sub_field('button_link');
-	$button_text = $button_link ? get_sub_field('button_text') : false;
+	$button_text = get_sub_field('button_text');
 	$button_url = $button_link == 'Internal' ? get_sub_field('page_link') : get_sub_field('external_link');
 
 	// layout vars
-	$row_class = $image_position == 'Right' ? 'row--reversed' : '';
+	$row_class = $image_position == 'Right' ? 'row row--reversed' : 'row';
 	$column_class = $image_position && $image_position != 'Above' ? 'column-t-6' : '';
 ?>
 <div class="container">
-	<div class="row <?php echo $row_class; ?>">
+	<div class="<?php echo $row_class; ?>">
 		<?php if($image_position) : ?>
 			<div class="column column-m-12 <?php echo $column_class; ?>">
 				<figure>
