@@ -17,12 +17,6 @@
 	$row_class = $image_position == 'Right' ? 'row--reversed' : '';
 	$column_class = $image_position && $image_position != 'Above' ? 'column-t-6' : '';
 ?>
-<style type="text/css">
-	.row--reversed {
-		flex-direction: row-reverse;
-	}
-</style>
-
 <div class="container">
 	<div class="row <?php echo $row_class; ?>">
 		<?php if($image_position) : ?>
