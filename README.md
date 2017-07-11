@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/brightonmike/Bullets.svg?branch=master)](https://travis-ci.org/brightonmike/Bullets)
+[![Build Status](https://travis-ci.org/BulletsFramework/bullets_starter_theme.svg?branch=master)](https://travis-ci.org/BulletsFramework/bullets_starter_theme)
 
-Bullets
+Bullets Starter Theme
 =======
 
 Bullets is a free WordPress skeleton theme. It contains just about enough Sass to get you started on your next project - but without being a highly comprehensive frame work such as Foundation or Bootstrap.
