@@ -31,7 +31,7 @@
 				<h3><?php echo $title; ?></h3>
 			<?php endif; ?>
 			<?php if ($text) { echo $text; } ?>
-			<?php if($button_link && $button_text && $button_url) : ?>
+			<?php if($button_text && $button_url) : ?>
 				<a href="<?php echo $button_url; ?>" <?php if($button_link == "External") : ?>target="_blank" rel="noopener noreferrer"<?php endif; ?>><?php echo $button_text; ?></a>
 			<?php endif; ?>
 		</div>

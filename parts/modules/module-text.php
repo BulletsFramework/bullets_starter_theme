@@ -10,7 +10,7 @@
 	<div class="row">
 		<div class="column column-m-12">
 			<?php echo $text; ?>
-			<?php if($button_link && $button_text && $button_url) : ?>
+			<?php if($button_text && $button_url) : ?>
 				<a href="<?php echo $button_url; ?>" <?php if($button_link == "External") : ?>target="_blank" rel="noopener noreferrer"<?php endif; ?>><?php echo $button_text; ?></a>
 			<?php endif; ?>
 		</div>

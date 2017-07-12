@@ -23,30 +23,6 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5937c9f41d222",
-                            "label": "Image",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        },
-                        {
                             "key": "field_5964b5ad64136",
                             "label": "Image",
                             "name": "",
@@ -259,39 +235,6 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5925aa40b8fb5",
-                            "label": "Button Link",
-                            "name": "button_link",
-                            "type": "select",
-                            "instructions": "Please state whether the button will link to a page within Formation Interiors or if the button will link to an external web page.",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5925a9edb8fb3",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "Formation Interiors page": "Formation Interiors page",
-                                "External web page": "External web page"
-                            },
-                            "default_value": [],
-                            "allow_null": 1,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
-                        },
-                        {
                             "key": "field_5925aacbb8fb6",
                             "label": "Page Link",
                             "name": "page_link",
@@ -319,7 +262,7 @@
                             ],
                             "taxonomy": [],
                             "allow_null": 0,
-                            "allow_archives": 1,
+                            "allow_archives": 0,
                             "multiple": 0
                         },
                         {
@@ -466,39 +409,6 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5964df5d7ed5b",
-                            "label": "Button Link",
-                            "name": "button_link",
-                            "type": "select",
-                            "instructions": "Please state whether the button will link to a page within Formation Interiors or if the button will link to an external web page.",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5964df5d7ed59",
-                                        "operator": "==",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "Formation Interiors page": "Formation Interiors page",
-                                "External web page": "External web page"
-                            },
-                            "default_value": [],
-                            "allow_null": 1,
-                            "multiple": 0,
-                            "ui": 0,
-                            "ajax": 0,
-                            "return_format": "value",
-                            "placeholder": ""
-                        },
-                        {
                             "key": "field_5964df5d7ed5c",
                             "label": "Page Link",
                             "name": "page_link",
@@ -526,7 +436,7 @@
                             ],
                             "taxonomy": [],
                             "allow_null": 0,
-                            "allow_archives": 1,
+                            "allow_archives": 0,
                             "multiple": 0
                         },
                         {
@@ -727,7 +637,7 @@
                             ],
                             "taxonomy": [],
                             "allow_null": 0,
-                            "allow_archives": 1,
+                            "allow_archives": 0,
                             "multiple": 0
                         },
                         {
@@ -889,7 +799,7 @@
             }
         ]
     ],
-    "menu_order": 3,
+    "menu_order": 1,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -897,5 +807,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1499785637
+    "modified": 1499859623
 }
