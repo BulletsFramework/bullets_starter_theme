@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+	<?php include 'parts/content-hero.php'; ?>
+
 	<main id="main" role="main">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
