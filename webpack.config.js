@@ -5,6 +5,9 @@ module.exports = {
     output: { 
         filename: 'bullets.js' 
     },
+    externals: {
+        "jquery": "$"
+    },       
     devtool: "sourcemap",
     module: {
         loaders: [
