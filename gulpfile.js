@@ -2,18 +2,15 @@
 var gulp  = require('gulp'),
     gutil = require('gulp-util'),
     sass = require('gulp-sass'),
-    //cssnano = require('gulp-cssnano'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
-    jshint = require('gulp-jshint'),
-    stylish = require('jshint-stylish'),
-    uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     plumber = require('gulp-plumber'),
     bower = require('gulp-bower'),
     babel = require('gulp-babel'),
-    browserSync = require('browser-sync').create();
+    path = require('path'),
+    browserSync = require('browser-sync').create(),
+    webpack = require('webpack-stream');
 
 // Compile Sass, Autoprefix and minify
 gulp.task('styles', function() {
@@ -36,22 +33,10 @@ gulp.task('styles', function() {
 
 
 gulp.task('bullets-js', function() {
-  return gulp.src([
-    './assets/app/*.js',
-  ])
-	.pipe(babel({
-		presets: ['es2015'],
-	    compact: true
-	}))
-    .pipe(sourcemaps.init())
-    .pipe(concat('bullets.js'))
-    .pipe(gulp.dest('./assets/js'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(sourcemaps.write('.')) // Creates sourcemap for minified JS
-    .pipe(gulp.dest('./assets/js'))
+return gulp.src(path.resolve(__dirname, './node_modules/bullets-js/src/index.js'))
+  .pipe(webpack( require('./webpack.config.js') ))
+  .pipe(gulp.dest('assets/js/'));
 });
-
 
 // Browser-Sync watch files and inject changes
 gulp.task('browsersync', function() {
