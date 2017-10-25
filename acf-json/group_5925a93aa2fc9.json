@@ -581,7 +581,7 @@
                             "label": "Button Link",
                             "name": "button_link",
                             "type": "select",
-                            "instructions": "Please state whether the button will link to a page within Formation Interiors or if the button will link to an external web page.",
+                            "instructions": "Please state whether the button will link to a page within the site or if the button will link to an external web page.",
                             "required": 0,
                             "conditional_logic": [
                                 [
@@ -598,7 +598,7 @@
                                 "id": ""
                             },
                             "choices": {
-                                "Formation Interiors page": "Formation Interiors page",
+                                "Internal page": "Internal page",
                                 "External web page": "External web page"
                             },
                             "default_value": [],
