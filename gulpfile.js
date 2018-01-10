@@ -33,7 +33,7 @@ gulp.task('styles', function() {
 
 
 gulp.task('bullets-js', function() {
-return gulp.src(path.resolve(__dirname, './node_modules/bullets-js/src/index.js'))
+return gulp.src(path.resolve(__dirname, './assets/app/app.js'))
   .pipe(webpack( require('./webpack.config.js') ))
   .pipe(gulp.dest('assets/js/'));
 });
