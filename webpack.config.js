@@ -2,28 +2,27 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+    entry: ["./assets/js/scripts/scripts.js"],
     output: { 
+        path: __dirname + "/assets/js",
         filename: 'bullets.js' 
     },
-    externals: {
-        "jquery": "$"
-    },       
     devtool: "sourcemap",
-    module: {
-        loaders: [
-            {
-                test: /.js?$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/,
-                query: {
-                    presets: ['es2015', 'stage-0'],
-                    plugins: [
-                        ["transform-es2015-for-of", {
-                            "loose": true
-                        }]
-                    ],
-                }
+    externals: {
+        "jquery": "jQuery"
+    },    
+    module: {   
+      rules: [
+        {
+          test: /\.js$/,
+          exclude: /node_modules\/(?!bullets-js)/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['babel-preset-env']
             }
-        ]
+          }
+        }
+      ]
     }
 }
