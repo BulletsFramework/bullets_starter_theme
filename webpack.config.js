@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: ["./assets/js/scripts/scripts.js"],
+    entry: ["./assets/app/app.js"],
     output: { 
         path: __dirname + "/assets/js",
         filename: 'bullets.js' 
