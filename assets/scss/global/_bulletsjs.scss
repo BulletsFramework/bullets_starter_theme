@@ -60,11 +60,11 @@ form input {
     opacity: 0;
     transition: all 0.5s;
 }
-.is-active-modal .modal {
+.modal-is-open .modal {
     top: 0;
     opacity: 1;
 }
-.is-active-modal .overlay {
+.modal-is-open .overlay {
     width: 100%;
     height: 100%;
 }
